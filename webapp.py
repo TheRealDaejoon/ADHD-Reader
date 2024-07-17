@@ -2,6 +2,7 @@ from flask import Flask, request, render_template_string
 
 app = Flask(__name__)
 
+# Algorithm for making letters bold
 def make_first_third_bold(text):
     words = text.split()
     result = ""
@@ -19,6 +20,7 @@ def make_first_third_bold(text):
         result += formatted_word + " "
     return result.strip()
 
+# Adding result to webpage with formatting for before and after.
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
@@ -125,5 +127,6 @@ def home():
         </html>
     ''')
 
+# Webpage 'test'
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
