@@ -1,9 +1,14 @@
-I am trying to make an adhd reader.
+# chrome.fontSettings
 
-AIMS:
-- make the first few letters of every word bold, the number of bold letters will depend on the length of the word.
-- change the font to a more readable font
-- keep certain formatting from original text for formatting
-- make the output easy to read
-- make the output mobile friendly
-- be accessible from other devices through wifi
+This extension demonstrates the `chrome.fontSettings` API by allowing users to modify the size of fonts on webpages.
+
+## Overview
+
+The extension creates a user interface in the extension's options page that allows users to see and modify font settings using `chrome.fontSettings` to change parameters.
+
+## Running this extension
+
+1. Clone this repository.
+2. Load this directory in Chrome as an [unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked).
+3. Pin th extension to the taskbar and click the action button.
+4. Click the extension's action button to visit the popup page.
