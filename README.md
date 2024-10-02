@@ -17,3 +17,6 @@ This is where the walktheDOM technique apparently works but i'm going to researc
 
 TODO:
 Crockford's walktheDOM technique
+
+[NOTE]
+readme and adhdtext file are not part of the chrome extension code
