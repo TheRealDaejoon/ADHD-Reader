@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Change Font Extension",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "options_page": "options/options.html"
+}
